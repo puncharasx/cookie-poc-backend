@@ -15,11 +15,11 @@ func main() {
 	// Configuration
 	cookieDomain := "" // Empty for localhost, set to your domain for production
 	env := "development"
-	frontendURL := "https://cookie-poc-backend.onrender.com" // Update this for your frontend
+	frontendURL := "https://spontaneous-mandazi-2f173e.netlify.app" // Update this for your frontend
 
 	// CORS configuration for cross-domain requests
 	app.Use(cors.New(cors.Config{
-		AllowOrigins:     "http://localhost:8083,https://*.netlify.app,https://*.ngrok.io,https://*.ngrok-free.app,https://cookie-poc-backend.onrender.com",
+		AllowOrigins:     "http://localhost:8083,https://*.netlify.app,https://*.ngrok.io,https://*.ngrok-free.app,https://spontaneous-mandazi-2f173e.netlify.app",
 		AllowCredentials: true,
 		AllowHeaders:     "Origin, Content-Type, Accept, Authorization",
 		AllowMethods:     "GET, POST, PUT, DELETE, OPTIONS",
